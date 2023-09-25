@@ -1,1 +1,8 @@
-{}
+{
+  "hello": "Hello",
+  "signInTitle": "Please sign in",
+  "email": "E-mail",
+  "password": "Password",
+  "rememberMe": "Remember Me",
+  "submit": "Submit"
+}

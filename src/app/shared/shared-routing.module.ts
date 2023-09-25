@@ -16,11 +16,11 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
+    data: { hideLayout: true }, // TODO: Hide Layout
   },
 ];
-
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class SharedRoutingModule { }
+export class SharedRoutingModule {}

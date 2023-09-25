@@ -1,1 +1,8 @@
-{}
+{
+  "hello": "Merhaba",
+  "signInTitle": "Lütfen giriş yapınız",
+  "email": "E-posta",
+  "password": "Şifre",
+  "rememberMe": "Beni Hatırla",
+  "submit": "Gönder"
+}

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav *ngIf="showLayout" class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" routerLink="/">ETIYA</a>
     <button
@@ -46,5 +46,3 @@
 </nav>
 
 <ng-content></ng-content>
-
-<footer>Bla bla</footer>
