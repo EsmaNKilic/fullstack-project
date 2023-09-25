@@ -17,7 +17,6 @@ export class ReactiveInputComponent {
 
   hasValidationError(errorName: string): boolean {
     let errors = this.formGroup.controls[this.formControlName].errors;
-    console.log(errors);
     if (errors == null || !this.isTouched()) return false;
 
     return errors[errorName];
@@ -32,5 +31,4 @@ export class ReactiveInputComponent {
   isTouched() {
     return this.formGroup.controls[this.formControlName].touched;
   }
-
 }
