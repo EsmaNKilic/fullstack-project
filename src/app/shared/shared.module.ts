@@ -10,10 +10,21 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ReactiveInputComponent } from './components/reactive-input/reactive-input.component';
 import { RegisterComponent } from './pages/register/register.component';
 
-
 @NgModule({
-  declarations: [HomepageComponent, MainLayoutComponent, LoginComponent, ReactiveInputComponent, RegisterComponent],
-  imports: [CommonModule, SharedRoutingModule, TranslateModule, FormsModule, ReactiveFormsModule],
-  exports:[MainLayoutComponent], // dış modüllerin kullanabileceği, dışarıya export edilen modüller
+  declarations: [
+    HomepageComponent,
+    MainLayoutComponent,
+    LoginComponent,
+    ReactiveInputComponent,
+    RegisterComponent,
+  ],
+  imports: [
+    CommonModule,
+    SharedRoutingModule,
+    TranslateModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
+  exports: [MainLayoutComponent, ReactiveInputComponent], // dış modüllerin kullanabileceği, dışarıya export edilen modüller
 })
-export class SharedModule { }
+export class SharedModule {}
