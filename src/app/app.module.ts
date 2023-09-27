@@ -8,10 +8,11 @@ import { CoreModule } from './core/core.module';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [AppComponent],
-  // import ettiğim modüllerden sadece o modülün export ettiği alanları kullanabiliriz
+  // Import ettiğim modüllerden sadece o modülün export ettiği alanları kullanabilirim.
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -29,8 +30,9 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
         deps: [HttpClient],
       },
     }),
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
