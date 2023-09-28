@@ -14,6 +14,8 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { sharedReducers } from './shared/store/shared.reducers';
 import { NgIconsModule } from '@ng-icons/core';
 import { bootstrapBasket } from '@ng-icons/bootstrap-icons';
+import { SocketIoModule } from 'ngx-socket-io';
+
 @NgModule({
   declarations: [AppComponent],
   // Import ettiğim modüllerden sadece o modülün export ettiği alanları kullanabilirim.
@@ -37,6 +39,10 @@ import { bootstrapBasket } from '@ng-icons/bootstrap-icons';
     ToastrModule.forRoot(),
     StoreModule.forRoot(sharedReducers),
     StoreDevtoolsModule.instrument({ maxAge: 60 }),
+    SocketIoModule.forRoot({
+      url: 'http://localhost:9000/',
+      options: {},
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],
